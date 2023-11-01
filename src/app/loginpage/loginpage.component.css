@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background:
+        #f5f5f5;
+
+    margin: 100px auto 0;
+
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.nokia {
+    color: darkblue;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 750;
+}
+
+.faciliviss {
+    color: darkslategrey;
+
+}
+
+.input-container {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+#einput {
+    height: 38px;
+
+    padding-left: 40px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+#pinput {
+    height: 38px;
+    margin-top: 18px;
+    padding-left: 40px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+#show-password {
+    position: absolute;
+    bottom: 8px;
+    left: 85%;
+    width: 20px;
+    height: 25px;
+}
+
+#input-img1 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#input-img2 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 5px;
+
+}
+
+.rem-forget {
+    margin: 20px;
+    margin-left: 60%;
+}
+
+#btn {
+
+    width: 90%;
+    height: 35px;
+    background-color: darkblue;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#btn[disabled] {
+    cursor: not-allowed;
+}
+
+.validation-message {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+}
+
+.success-message {
+    color: green;
+    font-size: 16px;
+    text-align: center;
+}

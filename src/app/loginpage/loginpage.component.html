@@ -1,0 +1,25 @@
+<div class="card">
+    <h2 class="nokia">NOKIA</h2>
+    <div class="faciliviss">FACILIVISS</div>
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">
+      <div class="input-container">
+        <img src="assets/images/user.png" id="input-img1">
+        <input id="einput" type="email" placeholder="Email" formControlName="email" required>
+        <div class="validation-message" id="email-validation-message" *ngIf="form.controls.email.invalid && form.controls.email.touched">
+          Please enter a valid email.
+        </div>
+        <br>
+        <img src="assets/images/lock.png" id="input-img2">
+        <input id="pinput" [type]="showPassword ? 'text' : 'password'" placeholder="Password" formControlName="password" required>
+        <div class="validation-message" id="password-validation-message" *ngIf="form.controls.password.invalid && form.controls.password.touched">
+          Password should be a minimum of 6 characters.
+        </div>
+        <img src="assets/images/{{showPassword ? 'hide.png' : 'show.png'}}" id="show-password" (click)="togglePasswordVisibility()" style="cursor: pointer;">
+      </div>
+      <div class="rem-forget">
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit" id="btn" [disabled]="form.invalid">Submit</button>
+    </form>
+  </div>
+  <router-outlet></router-outlet>
